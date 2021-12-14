@@ -1,0 +1,19 @@
+{
+   "type": "mysql",
+   "useUnifiedTopology": true,
+   "entities": [
+      "src/**/entities/*.ts"
+   ],
+   "migrations": [
+      "src/migrations/*{.ts,.js}"
+   ],
+   "migrationsTableName": "migrations",
+   "subscribers": [
+      "src/subscriber/**/*{.ts,.js}"
+   ],
+   "cli": {
+      "entitiesDir": "src/",
+      "migrationsDir": "src/migrations/",
+      "subscribersDir": "src/subscriber"
+   }
+}
